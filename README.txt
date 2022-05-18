@@ -6,6 +6,7 @@ Naudojantis pure java metodais sukurti HTTP REST'api serverio MVC veikima imituo
 1. galincia uplodinti konkretu csv faila,
 2. ji issaugti improvizuotoje db,
 3. pagal requesta gauti JSON pavidalu atsakyma su paskaiciavimais.
+4. parasyti paprasta front end'a galinti atvaizduoti JSON rezultatus.
 
 Veikimas:
 1. paleisti programa,
