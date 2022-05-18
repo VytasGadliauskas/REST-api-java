@@ -46,10 +46,27 @@ function convertJsontoHtmlTable(jsondata,tablediv) {
     }
 
     for (var i = 0; i < jsondata.length; i++) {
+        if (tablediv == "tablecaliculated" && i ==1){
+                    tr.classList.add("gold");
+                }
+        if (tablediv == "tablecaliculated" && i ==2){
+                    tr.classList.add("silver");
+                }
+        if (tablediv == "tablecaliculated" && i ==3){
+                    tr.classList.add("bronse");
+                }
         tr = tabledata.insertRow(-1);
         for (var j = 0; j < tablecolumns.length; j++) {
             var tabCell = tr.insertCell(-1);
-            tabCell.innerHTML = jsondata[i][tablecolumns[j]];
+                   if (tablediv == "tablecaliculated" && i ==0 && j == 0){
+                          tabCell.innerHTML = jsondata[i][tablecolumns[j]]+" GOLD";
+                   }else if (tablediv == "tablecaliculated" && i ==1 && j == 0){
+                          tabCell.innerHTML = jsondata[i][tablecolumns[j]]+" SILVER";
+                   }else if (tablediv == "tablecaliculated" && i ==2 && j == 0){
+                          tabCell.innerHTML = jsondata[i][tablecolumns[j]]+" BRONSE";
+                   } else {
+                          tabCell.innerHTML = jsondata[i][tablecolumns[j]];
+            }
         }
     }
 

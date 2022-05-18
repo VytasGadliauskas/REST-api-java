@@ -29,9 +29,10 @@ public class RESTapiDemoTest {
         athleteModel.AddAthlete(athleteTest3);
         athleteModel.WriteToDatabase();
         ArrayList<Athlete> athletesTest2 = athleteModel.ReadFromDatabase();
-        Assertions.assertTrue(athletesTest.get(0).getAthleteName().
-                equals(athletesTest2.get(0).getAthleteName()));
+        Assertions.assertEquals(athletesTest.get(0).getAthleteName(), athletesTest2.get(0).getAthleteName());
     }
+
+
 
 
 }
