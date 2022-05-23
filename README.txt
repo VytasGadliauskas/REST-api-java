@@ -1,6 +1,9 @@
 Tikslas:
 Pagilinti Java zinias.
 
+Veikimas:
+https://www.youtube.com/watch?v=Tb0k6IpfmKI
+
 Uzduotis issigalvota:
 Naudojantis pure java metodais sukurti HTTP REST'api serverio MVC veikima imituojantcia programa
 1. galincia uplodinti konkretu csv faila,
